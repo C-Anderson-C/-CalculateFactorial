@@ -9,29 +9,29 @@
 using namespace std;
 
 
-unsigned long long  CalculateFactorial(int n) {
+unsigned long long  CalculateFactorial(int n) { //因为计算结果数值过大，普通int无法容纳；unsigned无符号，负数没有阶乘
 
 	unsigned long long foral = 1;
-		for (int i = 1;i <= n;i++) {
+		for (int i = 1;i <= n;i++) {  //n由main中获取，从1乘到n来计算该数阶乘
 			foral=foral* i;
 	}
-		return foral;
+		return foral; //返回计算结果
 }
 
 
 int main() {
 	while (true) {
-		string input;
+		string input;  //将输入转换为字符串
 		cout << "请输入一个小于20的整数数以计算阶乘（按q结束程序）：" << endl;
-		getline(cin, input);
+		getline(cin, input);  //获取一整行的输入
 
-		if (input == "q") {
+		if (input == "q") {  //完成结束程序条件
 			cout << "程序结束" << endl;
 			break;
 		}
 		try {
-			size_t pos;
-			int number = stoi(input,&pos);
+			size_t pos;  //负数无阶乘，size_t是无符号整数，与int是相同功能但int有符号
+			int number = stoi(input,&pos);  //利用stoi函数将字符串转换为整数，pos指针将指向第一个非整数字符前一位
 
 			if (number < 0) {
 				throw invalid_argument("负数没有阶乘!");
