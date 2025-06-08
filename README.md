@@ -1,5 +1,6 @@
 # -CalculateFactorial
 # -计算不超过20的整数的阶乘
+![我的截图](image/屏幕截图%202025-06-08%20201323.png)
 ```cpp
 
 #include<iostream>
