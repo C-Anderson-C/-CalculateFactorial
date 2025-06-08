@@ -1,6 +1,8 @@
 # -CalculateFactorial
 # -计算不超过20的整数的阶乘
 ![我的截图](image/屏幕截图%202025-06-08%20201323.png)
+
+![我的截图的绝对路径版本](https://raw.githubusercontent.com/C-Anderson-C/-CalculateFactorial/main/image/屏幕截图%202025-06-08%20201323.png)
 ```cpp
 
 #include<iostream>
